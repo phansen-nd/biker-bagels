@@ -9,7 +9,7 @@ export default function Bagel() {
         const bagel = bagels.find(bagel => bagel.id === +id)
         return <p>This is the page for {bagel?.name}</p>
     } else {
-        return BasicText("We couldn't find that bagel :/");
+        return BasicText({ text: "We couldn't find that bagel :/" });
     }
     
 }
